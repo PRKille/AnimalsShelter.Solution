@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
+using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace AnimalShelter.Models
 {
@@ -9,9 +11,12 @@ namespace AnimalShelter.Models
     public string Type { get; set; }
     public string Name { get; set; }
     public string Gender { get; set; }
+    [DataType(DataType.Date)]
+    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
     public string DateOfAdmittance { get; set; }
+
     public string Breed { get; set; }
     public int Age { get; set; }
-    public bool PlaysWellWithOthers { get; set; }
+    // public int PlaysWellWithOthers { get; set; }
   }
 }
