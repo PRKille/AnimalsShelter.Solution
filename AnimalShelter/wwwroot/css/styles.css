@@ -21,7 +21,11 @@ a:hover {
 }
 
 .btn {
-  border: 3px solid pink;
+  background-image: radial-gradient(gray, blue);
+  width: 25%;
+  border: 5px solid black;
+  margin: 15px;
+  border-radius: 15px;
 }
 
 input {
@@ -31,6 +35,7 @@ input {
   text-align: center;
   color: ivory;
   width: 35%;
+  margin: 8px;
   margin-bottom: 30px;
 }
 
@@ -48,4 +53,8 @@ h3 {
   margin-left: 150px;
   margin-right: 150px;
   padding: 20px;
+}
+
+ul {
+  list-style-type: none;
 }
