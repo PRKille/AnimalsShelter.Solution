@@ -1,0 +1,25 @@
+@{
+  Layout = "_Layout";
+}
+
+@model AnimalShelter.Models.Animal
+<h2>@Html.DisplayFor(model => model.Name)'s Details</h2>
+
+<div class="box">
+  <ul>
+    <li>Type: @Html.DisplayFor(model => model.Type)</li>
+    <li>Gender: @Html.DisplayFor(model => model.Gender)</li>
+    <li>Breed: @Html.DisplayFor(model => model.Breed)</li>
+    <li>Age: @Html.DisplayFor(model => model.Age)</li>
+    <li>Date of Admittance: @Html.DisplayFor(model => model.DateOfAdmittance)</li>
+    @* @if (Html.DisplayFor(model => model.PlaysWellWithOthers) == 1)
+    {
+      <li>Loves everyone!</li>
+    }
+    else if (Html.DisplayFor(model => model.PlaysWellWithOthers) == 0)
+    {
+      <li>Takes some time to adjust. Be careful.</li>
+    } *@
+  </ul>
+  <p>@Html.ActionLink("Back to list", "Index")</p>
+</div>
