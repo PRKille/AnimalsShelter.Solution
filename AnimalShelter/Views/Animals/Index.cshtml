@@ -14,11 +14,11 @@
     <h3>All the animals have homes!</h3>
   }
   <ul>
-  @foreach (Animal animal in Model.OrderBy(animal => animal.Name))
+  @foreach (Animal animal in Model.OrderBy(animal => animal.DateOfAdmittance))
   {
     <li>@Html.ActionLink($"{animal.Name}", "Details", new {id = animal.AnimalId })</li>
   }
   </ul>
-  <p>@Html.ActionLink("Add an animal", "Create")</p>
+  <p class="btn">@Html.ActionLink("Add an animal", "Create")</p>
   <p>@Html.ActionLink("Home", "Index", "Home")</p>
 </div>
