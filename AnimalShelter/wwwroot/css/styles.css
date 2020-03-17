@@ -20,6 +20,10 @@ a:hover {
   opacity: .6;
 }
 
+.btn {
+  border: 3px solid pink;
+}
+
 input {
   background-color: black;
   border: 3px solid black;
