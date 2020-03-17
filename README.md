@@ -1,53 +1,60 @@
 # _Animal Shelter_
 
-#### _{Brief description of application}, 3/17/2020_
+#### _Animal shelter with database site, 3/17/2020_
 
 #### By _**JW/PK/PD**_
 
 ## Daily Summary
-_This stuff happened_
-_Also this stuff_
+_We were able to build the basic functioning site for the animal shelter.  We set up a database, are able to add new animals with a form, and view each animal's details by clicking on their name.  We played with sorting the index list in different ways, and it is currently set to sort by date of admittance._
+_The main issue we struggled with was trying to get the date format in C# and our database to cooperate.  We tried a number of options, and ended up converting the date to a string and saving it in the database that way.  We received the date information in the datetime format, so each date string will be formatted similarly, and thus we are able to compare and sort based on this data.  We also attempted to have a boolean value for "plays well with others" but didn't have much success, and didn't have time to pursue the solution._
 __
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_The app is a tracking system for animals in the shelter.  Upon landing on the splash page, a user can navigate to the index list of animals, add new animals, and see the list sorted by date of admittance._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _Setup requires dotnet core_
+* _Clone from https://github.com/fractalscape13/AnimalShelter_
+* _From AnimalShelter directory, run "dotnet restore" and "dotnet build"_
+* _In terminal, enter "dotnet run" to run program and view on localhost:5000 in browser_
+* _Open files in text editor to view code_
 
 ## Specifications
 
-* _This happens when a user does something_
-    * _Example: Input: Click
-    * _Output: Something shows
-* _This happens when a user does something_
-    * _Example: Input: Click
-    * _Output: Something shows
-* _This happens when a user does something_
-    * _Example: Input: Click
-    * _Output: Something shows
-* _This happens when a user does something_
-    * _Example: Input: Click
-    * _Output: Something shows
+* _User may navigate between pages._
+    * _Example: Input: Home page -> Create New Animal Page_
+    * _Output: All code written for New Animal Page is run_
+
+* _User may create a new Animal._
+    * _Example: Input: Click link to New Animal Page._
+    * _Output: A new Animal object is added to the shelter list._
+    
+* _User may click on an animal's name to view specific details._
+    * _Example: Input: Click animal's name in index list._
+    * _Output: Specific details about the animal being clicked on are revealed to the user._ 
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_There are no known bugs at the moment._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_If you have any questions, comments, concerns, or suggestions, feel free to contact us by submitting a pull request._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* _Command Terminal_
+* _Git_
+* _VS Code_
+* _HTML_
+* _CSS_
+* _C#_
+* _.NET core_
+* _Asp.Net core_
+* _MVC_
+* _MYSQL_
+
 
 ### License
 
